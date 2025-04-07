@@ -1,0 +1,9 @@
+{
+	"name": "dalira-php/view",
+	"description": "Dalira PHP view generator library",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": "^7.4|^8.0"
+	}
+}
