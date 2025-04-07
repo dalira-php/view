@@ -12,7 +12,7 @@ $viewContent = <<<PHP
 
 <?php \$this->start('mainContent') ?>
 
-// Add your content here to be displayed in the browser
+<!-- Add your content here to be displayed in the browser -->
 
 <?php \$this->stop() ?>
 PHP;
