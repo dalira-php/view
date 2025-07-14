@@ -8,13 +8,20 @@ if ($argc < 2) {
 $viewName = ucfirst($argv[1]);
 
 $viewContent = <<<PHP
+// Extend the base layout named 'Layout' and pass the 'mainContent' section fetched from the same layout
 <?php \$this->layout('Layout', ['mainContent' => \$this->fetch('Layout')]) ?>
 
-<?php \$this->start('mainContent') ?>
+<?php 
+// Start defining the content for the 'mainContent' section
+\$this->start('mainContent'); 
+?>
 
 <!-- Add your content here to be displayed in the browser -->
 
-<?php \$this->stop() ?>
+<?php
+// End the 'mainContent' section
+\$this->stop();
+?>
 PHP;
 
 $path = getcwd() . '/app/Views/' . $viewName . '.php';
