@@ -13,7 +13,7 @@ $viewContent = <<<PHP
 
 <?php 
 // Start defining the content for the 'mainContent' section
-\$this->start('mainContent'); 
+\$this->start('mainContent');
 ?>
 
 <!-- Add your content here to be displayed in the browser -->
