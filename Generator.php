@@ -12,7 +12,7 @@ $viewContent = <<<PHP
 // Extend the base layout named 'Layout' and pass the 'mainContent' section fetched from the same layout
 \$this->layout('Layout', ['mainContent' => \$this->fetch('Layout')]) ?>
 
-<?php 
+<?php
 // Start defining the content for the 'mainContent' section
 \$this->start('mainContent');
 ?>
