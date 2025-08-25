@@ -9,18 +9,13 @@ $viewName = ucfirst($argv[1]);
 
 $viewContent = <<<PHP
 <?php 
-// Extend the base layout named 'Layout' and pass the 'mainContent' section fetched from the same layout
-\$this->layout('Layout', ['mainContent' => \$this->fetch('Layout')]) ?>
-
-<?php
-// Start defining the content for the 'mainContent' section
+\$this->layout('Layout', ['mainContent' => \$this->fetch('Layout')]);
 \$this->start('mainContent');
 ?>
 
 <!-- Add your content here to be displayed in the browser -->
 
 <?php
-// End the 'mainContent' section
 \$this->stop();
 ?>
 PHP;
